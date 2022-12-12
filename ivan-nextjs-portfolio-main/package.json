@@ -1,0 +1,40 @@
+{
+  "name": "ivan-nextjs-portfolio-main",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.13",
+    "@portabletext/react": "^2.0.0",
+    "@sanity/image-url": "^1.0.1",
+    "@types/node": "18.11.10",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "emailjs-com": "^3.2.0",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.5",
+    "framer-motion": "^7.6.17",
+    "next": "13.0.5",
+    "next-sanity": "^3.1.2",
+    "react": "18.2.0",
+    "react-carousel-responsive": "0.0.31",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.40.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-simple-typewriter": "^5.0.1",
+    "react-social-icons": "^5.15.0",
+    "react-toastify": "^9.1.1",
+    "typescript": "4.9.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "tailwind-scrollbar": "^2.0.1",
+    "tailwindcss": "^3.2.4"
+  }
+}

@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  body {
+    @apply scrollbar-thin scrollbar-track-gray_300 dark:scrollbar-track-gray_700 scrollbar-track-rounded-md scrollbar-thumb-rounded-md scrollbar-thumb-[#F7AB0A];
+  }
+  .home {
+    @apply scrollbar-thin  lg:scrollbar-track-transparent lg:scrollbar-thumb-blue_600/80 lg:hover:scrollbar-thumb-blue_600 transition-colors scrollbar-track-rounded-md scrollbar-thumb-rounded-md;
+  }
+  .heroButton {
+    @apply px-3 py-1 md:px-5 dark:bg-gray_900 md:dark:bg-inherit md:hover:shadow-md  dark:hover:shadow-[#F7AB0A]/40 md:py-2 hover:-translate-y-[2px] border-gray_600 dark:border-gray-500 font-semibold rounded-full uppercase text-xs md:text-sm tracking-widest text-gray_600  dark:text-gray_500 transition-all duration-300 border hover:dark:text-[#F7AB0A]/40 hover:dark:border-[#F7AB0A]/40;
+  }
+  .contact-input {
+    @apply outline-none bg-gray_300/10 rounded-md border-b dark:text-blue_100 px-3 py-3  border-[#F7AB0A]/40  text-[#F7AB0A]/40 placeholder-gray_500 transition-all focus:border-[#F7AB0A]/40 hover:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40;
+  }
+  .common-hero-circle {
+    @apply rounded-full border absolute mt-52;
+  }
+  .section-title {
+    @apply uppercase z-40 md:tracking-[20px] tracking-[10px] text-gray_600 text-2xl;
+  }
+  .tw-bg-primary {
+    @apply dark:bg-gray_900 bg-gray_100;
+  }
+  .toggle-switch {
+    @apply p-1 text-3xl flex justify-center items-center transition-all rounded-full;
+  }
+  .hidden-scrollbar::-webkit-scrollbar {
+    @apply h-2 bg-accentColor/30 rounded-lg overflow-x-hidden;
+  }
+  .hidden-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-accentColor/60 rounded-lg;
+  }
+  .hidden-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-accentColor;
+  }
+  *::selection {
+    @apply bg-gray-600 text-white;
+  }
+  .arrow-container {
+    @apply absolute z-30 top-1/2;
+  }
+  .left-arrow {
+    @apply left-3 lg:left-10;
+  }
+  .right-arrow {
+    @apply right-3 lg:right-10;
+  }
+  .arrow-style {
+    @apply text-3xl p-1 lg:text-5xl lg:p-2 rounded-full bg-gray_900 hover:bg-accentColor/50 transition-all cursor-pointer shadow-lg;
+  }
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #f7ab0a;
+  transform-origin: 0%;
+  z-index: 999;
+}
+
+.exp-company {
+  border-radius: 50% !important;
+  height: 5rem !important;
+  width: 5rem !important;
+  background-color: hsl(0, 0%, 15%);
+}
+@media screen and (min-width: 768px) {
+  .exp-company {
+    height: 10rem !important;
+    width: 10rem !important;
+  }
+}
+
+.exp-list {
+  margin: 0;
+}
